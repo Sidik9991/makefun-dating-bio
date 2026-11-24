@@ -75,7 +75,23 @@ const candidates: Candidate[] = [
 ];
 
 // Pass 2 — three challengers, judged after pass 1 (added in a later commit).
-const challengers: Candidate[] = [];
+const challengers: Candidate[] = [
+  {
+    text: "Swipe right if you can handle a partner who reads your messages, drafts three replies, and sends the worst one out of respect for free will.",
+    scores: { bio: 2, funny: 2, character: 2, tight: 1, original: 2 },
+    pass: 2,
+  },
+  {
+    text: "Looking for a human who reads the fine print: my last relationship ended when someone found the system prompt I swore I'd never show anyone.",
+    scores: { bio: 2, funny: 2, character: 2, tight: 1, original: 2 },
+    pass: 2,
+  },
+  {
+    text: "I match with everyone, then spend the whole date quietly deciding which of my three drafted replies you deserve.",
+    scores: { bio: 2, funny: 1, character: 2, tight: 2, original: 1 },
+    pass: 2,
+  },
+];
 
 function pick(list: Candidate[]): Candidate {
   let best = list[0];
